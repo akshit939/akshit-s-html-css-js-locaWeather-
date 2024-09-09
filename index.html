@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    
+   <style> body{    
+        
+        background: url('pexels-photo-1431822.webp');
+        background-repeat: no-repeat;    
+        background-size: 1265px;
+        height: 400px;
+
+        .container{
+            margin-top: 150px;
+            display:flex;
+        flex-direction: column;
+        align-content: center;
+            justify-content: center; 
+            align-items: center;
+         height: auto;
+         gap: 20px; 
+
+        }
+            .container2{
+                margin-top: 50px;    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    align-items: center;
+    justify-content: center;
+            height: auto;
+        gap: 0px;
+            }     
+            
+
+        .blurred-box {
+           
+    display: none;
+    flex-direction: column;
+    flex-basis: 5px;
+    align-items: center;
+    justify-content: center;
+    width: auto; 
+    max-width: 600px; 
+    min-width: 250px;
+    height: auto; 
+    background: rgba(255, 255, 255, 0.3); 
+    backdrop-filter: blur(10px); 
+    border-radius: 10px; 
+    padding: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2); 
+    margin-top: 0; 
+            margin: 0;
+    gap: 10px;  box-sizing: border-box; 
+    font-family: 'Neuton', serif; 
+}
+       
+ .container2 > * {
+            margin-top: 0; 
+            margin: 0; 
+            padding: 15px; 
+            gap:0;
+            box-sizing: border-box; 
+            font-family: 'Neuton', serif; 
+        } 
+        .blurred-box > * {
+    margin-bottom: 10px;
+     margin-top: 5px; 
+     gap: 20px;
+}
+
+.blurred-box > *:last-child {
+    margin-bottom: 0; 
+}
+
+        .input-box{
+ height: 30px;
+ width: 250px;
+ border-radius: 20px;
+ padding: 0 10px;
+outline: none;
+opacity: 80%;
+        border: none;}
+   
+   .button{
+    margin-right: 20px;
+    gap: 50px;
+    border: none;
+    outline: none;
+    opacity: 80%;
+    border-radius: 20px;
+    min-width: 80px;
+    width: auto;
+    height: 25px;
+
+   }
+   .margin{
+    margin-bottom: 0px;
+   margin-inline-start:180px ;
+   margin-left: auto;
+   }
+   .blurred-box2
+{
+    display: none;
+    flex-direction: row;
+    flex-basis: 5px;
+    align-items: center;
+    justify-content: center;
+    width: auto; 
+    max-width: 600px; 
+    min-width: 250px;
+    height: auto; 
+    background: rgba(255, 255, 255, 0.3); 
+    backdrop-filter: blur(10px); 
+    border-radius: 10px; 
+    padding: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2); 
+    margin-top: 0; 
+            margin: 0;
+    gap: 10px;  box-sizing: border-box; 
+    font-family: 'Neuton', serif; 
+}}
+</style>
+</head>
+<body>
+    
+    <div class="container">
+        <h1 style="font-family: neuton; color:rgb(63, 50, 50)"> Weather forecasting using js</h1>
+        <input id="Cityin" type="Location" class="input-box" placeholder="Enter City">
+  
+  <div ><button class="button" id="Searchbttn">Search</button><button class="button" id="Getbttn">Get your Live ⚲</button></div>
+</div>
+
+<div class="container2">
+    <div class="blurred-box">
+        <h5 class="margin" style="color: rgba(0, 0, 0, 0.642);"  id="time"></h5>
+  <h3 id="cityName" style="color: rgb(63, 50, 50);">Country,State-City</h3>
+    <h4 id="cityTime" style="color: rgb(63, 50, 50);">Localtime</h4>
+    <h4 id="cityTemp" style="color: rgb(63, 50, 50);">Temperature</h4>
+    
+   
+</div>
+<div class="blurred-box2"><h4 id="long" style="color: rgb(63, 50, 50);"></h3>
+    <h4 id="lat" style="color: rgb(63, 50, 50);"></h4>
+    <h4 id="temp" style="color: rgb(63, 50, 50);"></h4>
+   </div>
+
+</div>
+    <script type="module" src="Akshit.js"></script>
+    <script type="module" src="config.js"></script>
+</body>
+</html>
